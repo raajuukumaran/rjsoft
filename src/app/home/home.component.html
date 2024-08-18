@@ -1,0 +1,157 @@
+<header>
+    <nav>
+      <div class="menu-icon" (click)="toggleMenu()">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
+      <ul id="nav-links" class="hidden">
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/carrers">Careers</a></li>
+        <li><a routerLink="/blog">Blogs</a></li>
+        <li><a routerLink="/offer">What's Offer You</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="banner">
+      <div class="carousel-container">
+        <div class="carousel-slide" [ngStyle]="{'background-image': 'url(' + images[currentImageIndex] + ')'}">
+          <h1>Welcome to RKSoft</h1>
+          <p style="color: black;">
+            Your trusted partner in innovative solutions.
+          </p>
+          <button routerLink="/carrers">Explore Careers</button>
+        </div>
+      </div>
+    </section>
+  <main>
+    <section class="about">
+        <h2>About Us</h2>
+        <p>At RKSoft, we are dedicated to providing cutting-edge solutions tailored to your needs.</p>
+        
+        <!-- Full-width image slider -->
+        
+      
+        <div class="about-details">
+          <p>We combine innovation, technology, and expertise to deliver superior results.</p>
+          <p>Our team of professionals is committed to excellence in every project we undertake.</p>
+          
+          <!-- Grid of images -->
+          <div class="image-grid">
+            <div class="grid-item">
+              <div class="image-item">
+                <img src="assets/4.avif" alt="Team Image 1">
+              </div>
+              <div class="image-item">
+                <img src="assets/5.jpg" alt="Team Image 2">
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="image-item">
+                <img src="assets/6.jpg" alt="Team Image 3">
+              </div>
+              <div class="image-item">
+                <img src="assets/7.jpg" alt="Team Image 4">
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="image-item">
+                <img src="assets/8.avif" alt="Team Image 5">
+              </div>
+              <div class="image-item">
+                <img src="assets/9.jpg" alt="Team Image 6">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+
+      <section class="services full-width-section">
+        <div class="services-container">
+            <h2 class="services-heading">Our Services</h2>
+            <div class="services-list">
+                <div class="service">
+                    <i class="fas fa-comments service-icon"></i>
+                    <h3>Consulting</h3>
+                    <p>Expert advice to help you navigate complex challenges.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-code service-icon"></i>
+                    <h3>Development</h3>
+                    <p>Custom software solutions to meet your specific needs.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-life-ring service-icon"></i>
+                    <h3>Support</h3>
+                    <p>24/7 support to ensure your operations run smoothly.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-paint-brush service-icon"></i>
+                    <h3>Design</h3>
+                    <p>Creative design services to bring your ideas to life.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-chart-line service-icon"></i>
+                    <h3>Strategy</h3>
+                    <p>Strategic planning to drive growth and success.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-cloud service-icon"></i>
+                    <h3>Cloud Solutions</h3>
+                    <p>Scalable cloud solutions to enhance your business operations.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-lock service-icon"></i>
+                    <h3>Security</h3>
+                    <p>Robust security measures to protect your data and assets.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-mobile-alt service-icon"></i>
+                    <h3>Mobile Apps</h3>
+                    <p>Development of mobile applications to reach your audience on the go.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>Reach Out:</h3>
+            <p>We are RKSoft, dedicated to delivering innovative solutions tailored to your needs.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links:</h3>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="offer">Offers</a></li>
+              <li><a href="carrers">Careers</a></li>
+              <li><a href="blog">Blogs</a></li>
+              <li><a href="contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Us-</h3>
+            <p>Email: <a href="mailto:rraajuukumaran@gmail.com">rraajuukumaran@gmail.com</a></p>
+            <p>Phone: <a href="phn:+91-9952493508">9952493508</a></p>
+            <p>Address: 2/116b,T.Ayyanarpuram,
+                Melur(T.K),
+                Madurai,
+                625110</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 RKSoft. All rights reserved.</p>
+        </div>
+      </footer>
+      
+    
+</main>
+
+  

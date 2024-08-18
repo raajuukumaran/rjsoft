@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light background color for contrast */
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+}
+
+/* Hamburger menu styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.bar {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    margin: 0 10px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+
+
+/* Hide menu initially */
+.hidden {
+    display: none;
+}
+
+/* Responsive Design: Show menu in block format when clicked */
+@media (max-width: 768px) {
+    ul {
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+    ul li {
+        display: block;
+    }
+}
+
+.menu-icon.change .bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-icon.change .bar2 {
+    opacity: 0;
+}
+
+.menu-icon.change .bar3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* General Section Styling */
+.careers, .job-openings, .why-join-us, .how-to-apply, .contact-info {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.careers h2, .job-openings h3, .why-join-us h3, .how-to-apply h3, .contact-info h3 {
+    color: #333;
+}
+
+/* Card Styling */
+.job-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.job-item {
+    border: none;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #d0f0c0, #a8e6a1); /* Light green gradient */
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.job-item::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent overlay for texture */
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.job-item:hover {
+    transform: scale(1.05);
+    box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.15), -12px -12px 24px rgba(255, 255, 255, 0.6);
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff4500;
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding: 10px;
+    background-color: #222;
+}

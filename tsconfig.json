@@ -4,6 +4,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "rootDir": "./src",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
@@ -16,8 +17,10 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "ES2022",
-    "module": "ES2022",
+    "target": "ES2022",  /* Combined target for ES2022 */
+    "module": "CommonJS", /* CommonJS for Node.js compatibility */
+    "esModuleInterop": true, /* Ensures compatibility with CommonJS modules */
+    "skipLibCheck": true,
     "useDefineForClassFields": false,
     "lib": [
       "ES2022",
@@ -29,5 +32,8 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  "include": [
+    "src/**/*"
+  ]
 }

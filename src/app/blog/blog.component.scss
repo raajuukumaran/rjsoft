@@ -1,0 +1,256 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hamburger menu styling */
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.bar {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+ul li {
+    margin: 0 10px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Hide menu initially */
+.hidden {
+    display: none;
+}
+
+/* Responsive Design: Show menu in block format when clicked */
+@media (max-width: 768px) {
+    ul {
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    ul li {
+        display: block;
+    }
+}
+
+.menu-icon.change .bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-icon.change .bar2 {
+    opacity: 0;
+}
+
+.menu-icon.change .bar3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Blog Section Styling */
+.blog {
+    padding: 60px 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.blog h2 {
+    color: #e63946; /* Bold red for Marvel-like impact */
+    font-size: 3em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Animation for blog items */
+.blog-item {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(145deg, #1e1e1e, #3a3a3a); /* Dark gradient background */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: scale(0.9) rotate(-3deg); /* Initial scale and rotation */
+    animation: popIn 1s forwards; /* Apply pop-in animation */
+}
+
+/* Pop-in animation */
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9) rotate(-3deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+}
+
+.blog-item:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.blog-item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.blog-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.blog-item:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    transform: scale(1.02) rotate(1deg);
+}
+
+/* Ensure responsive image sizes */
+.blog-image {
+    width: 100%;
+    height: auto;
+}
+
+.blog-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 5px solid #e63946; /* Red border for accent */
+}
+
+/* Content styling */
+.blog-content {
+    padding: 20px;
+    color: #f1f1f1; /* Light text color for contrast */
+}
+
+.blog-content h3 {
+    color: #e63946; /* Bold red for titles */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.blog-date {
+    color: #f1f1f1; /* Light color for dates */
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.blog-summary {
+    color: #ddd; /* Slightly darker color for summary text */
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #ff4d4d; /* Bold red button */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #cc0000; /* Darker red for hover */
+    transform: scale(1.05);
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 0.9em;
+    text-align: center;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+    margin: 5px 0;
+  }
+  
+  .footer-section a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #444;
+    padding: 10px;
+    background-color: #222;
+  }
+  
+
